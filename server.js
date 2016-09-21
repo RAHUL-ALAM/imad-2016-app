@@ -22,7 +22,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/article-one',function (req,res) {
-    res.send('Article one requested ')
+    res.send('Article one requested ');
 });
 
 
