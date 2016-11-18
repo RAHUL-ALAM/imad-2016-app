@@ -19,6 +19,13 @@ body {
 .loginform p{
     font-size: 12px;
 }
+.loginform button{
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100px;
+}
 #email,#password{
     width: 100%;
     padding: 10px 20px;
