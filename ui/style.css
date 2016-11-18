@@ -14,7 +14,7 @@ body {
     right: 40px;
 }
 
-#email{
+#email,#password{
      width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -22,7 +22,6 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
 }
 #submit {
     background-color: #4CAF50;
