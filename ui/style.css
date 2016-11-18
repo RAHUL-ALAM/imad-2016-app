@@ -13,7 +13,9 @@ body {
     top: 80px;
     right: 80px;
 }
-
+.loginform p{
+    font-size: 8px;
+}
 #email,#password{
     width: 100%;
     padding: 10px 20px;
