@@ -14,12 +14,12 @@ body {
     right: 80px;
 }
 .loginform p{
-    font-size: 15px;
+    font-size: 12px;
 }
 #email,#password{
     width: 100%;
     padding: 10px 20px;
-    margin: 10px 0;
+    margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
