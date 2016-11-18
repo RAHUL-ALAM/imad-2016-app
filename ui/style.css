@@ -14,7 +14,7 @@ body {
     right: 80px;
 }
 .loginform p{
-    font-size: 8px;
+    font-size: 15px;
 }
 #email,#password{
     width: 100%;
