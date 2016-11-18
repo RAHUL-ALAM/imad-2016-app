@@ -16,8 +16,9 @@ body {
     padding: 30px 80px 30px 40px;
     border-radius: 10px;
 }
-.loginform p{
-    font-size: 12px;
+.loginform p,.loginform a{
+    font-size: 12px; 
+    text-decoration: none;
 }
 .loginform button{
     background-color: #4CAF50;
