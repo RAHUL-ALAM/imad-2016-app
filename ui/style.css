@@ -13,7 +13,7 @@ body {
     top: 80px;
     right: 80px;
     background-color: grey;
-    padding-right: 30px 80px 30px 40px;
+    padding: 30px 80px 30px 40px;
     border-radius: 10px;
 }
 .loginform p{
