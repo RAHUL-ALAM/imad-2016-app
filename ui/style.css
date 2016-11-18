@@ -14,6 +14,7 @@ body {
     right: 80px;
     background-color: grey;
     padding:40px;
+    border-radius: 10px;
 }
 .loginform p{
     font-size: 12px;
