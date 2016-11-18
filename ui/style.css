@@ -11,17 +11,15 @@ body {
 .loginform {
     position: fixed;
     top: 60px;
-    right: 40px;
+    right: 80px;
 }
 
 #email,#password{
-     width: 100%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    border-radius: 5px;
 }
 #submit {
     background-color: #4CAF50;
