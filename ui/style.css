@@ -12,7 +12,8 @@ body {
     position: fixed;
     top: 80px;
     right: 80px;
-    background-color:white;
+    background-color: grey;
+    padding:40px;
 }
 .loginform p{
     font-size: 12px;
