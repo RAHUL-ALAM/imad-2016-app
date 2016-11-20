@@ -22,7 +22,16 @@ body {
 }
 
 #blog{
-    position:absolute; right:200px;
+    position:absolute; right:200px; top: 30px;
+}
+#about{
+    position:absolute; right:200px; top: 30px;
+}
+#contacts{
+    position:absolute; right:200px; top: 30px;
+}
+#home{
+    position:absolute; right:200px; top: 30px;
 }
 
 .center {
