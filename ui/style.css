@@ -21,6 +21,10 @@ body {
     color: #4CAF50;
 }
 
+#blog{
+    position:absolute; right:200px;
+}
+
 .center {
     text-align: center;
 }
