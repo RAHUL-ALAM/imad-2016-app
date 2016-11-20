@@ -17,7 +17,8 @@ body {
     padding: 10px; 
     border-radius: 5px;
     background-color: lightgrey;
-    font-size: 20px; font-weight: bold;
+    font-size: 20px; font-weight: bold; font-family: verdana;
+    color: #4CAF50;
 }
 
 .center {
