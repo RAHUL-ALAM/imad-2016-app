@@ -16,6 +16,10 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
+app.use(session({
+    secret : 'someRandomSecretValue',
+    cookie : {maxAge : 1000*60*60*24*30 }
+}));
 
 function createTemplate(data){}
 app.get('/',function(req,res){
@@ -71,7 +75,7 @@ app.post('/login',function(req,res){
                 var hashedPassword = hash(password,salt);
                 if(hashedPassword === dbstring)
                 {
-                    
+                    req.session.auth = {userId: result.rows[0].id};
                 }
                 else
                 {
