@@ -20,6 +20,23 @@ app.get('/',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'login.html'));
 });
 
+function hash(input,salt){
+    var hashed = crypto.pbkdfSync(input,salt,10000,512,'sha512');
+    return["pbkdf2","10000",salt,hashed.toString('hex')].join($);
+}
+
+app.get('/hash:/input',function(req,res){
+    var hashedString = hash(req.params.input,'this-is-some-random-string');
+    res.send(hashedString);
+});
+
+app.get('/create-user',function(req,res){
+    var salt = crypto.getRandomBytes(128).toString('hex');
+    var dbString = hash(password,salt);
+})
+
+
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'login.html'));
