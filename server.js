@@ -12,6 +12,11 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 
+function createTemplate(data){}
+app.get('/',function(req,res){
+    res.sendFile(path.join(__dirname, 'ui', 'login.html'));
+});
+
 var app = express();
 app.use(morgan('combined'));
 
