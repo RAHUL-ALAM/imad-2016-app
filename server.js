@@ -30,7 +30,7 @@ app.get('/hash:/input',function(req,res){
     res.send(hashedString);
 });
 
-app.get('/create-user',function(req,res){
+app.post('/create-user',function(req,res){
     var salt = crypto.getRandomBytes(128).toString('hex');
     var dbString = hash(password,salt);
     pool.query('INSERT INTO "user"(username,password) VALUES ($1,$2)',[username,dbstring],function(err,result){
