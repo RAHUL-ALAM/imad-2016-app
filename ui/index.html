@@ -1,33 +1,22 @@
 <!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="header">
-            <header id="hr"> FakeBOOK </header>
-            <p id="blog">blog</p> <p id="contacts">contacts</p> <p id="about">about</p> <p id="home"> home </p>
-        </div>
-        <div class="center">
-            <img src="/ui/" class="img-medium"/>
-        </div>
-        <div class="loginform">
-            <form action="article-one.htmls">
-                Email:<br>
-                <input id="email" type="text"><br>
-                Password:<br>
-                <input id="password" type="password" name="lastname"><br>
-                <p> <a href="#">forgot password?</a> </p>
-                <input id="submit" type="submit" value="Submit">
-                <p> not have an account?create a new account here </p>
-                <a href="/article-one"><button type="button">Sign Up</button></a>
-            </form> 
-        </div>
-        <br>
-        <div class="center text-big bold">
-            Hi!!!!! I am your webapp.
-        </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+<head>
+	<title> Home </title>
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header">
+        <header id="hr"> blogBOOK </header>
+        <a class="link" href=""><p id="blog">blog</p> </a>
+        <a class="link" href=""><p id="contacts">contacts</p></a> 
+        <a class="link" href=""><p id="about">about</p> </a>
+        <a class="link" href=""><p id="home"> profile </p><a>
+        <a id="logout" href="/logout">Logout </a>
+    </div>
+    <div>
+    	<textarea id="comment" name="message"> </textarea>
+    	<input type="submit" id="cmntbutn" value="comment">
+    </div>
+</body>
 </html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="info">
+            Lorem Ipsum ...
+        </div>
+        <div class="header">
+            <header id="hr"> blogBOOK </header>
+            <p id="blog">blog</p> <p id="contacts">contacts</p> <p id="about">about</p> <p id="home"> home </p>
+        </div>
+        <div class="center">
+            <img id="img" src="madi.png" class="img-medium"/>
+        </div>
+        <div class="loginform">
+            <form method="post" action="/login">
+                Email:<br>
+                <input name="username" id="email" type="text"><br>
+                Password:<br>
+                <input name="password" id="password" type="password" name="lastname"><br>
+                <p> <a href="#">forgot password?</a> </p>
+                <input id="submit" type="submit" value="Submit">
+                <p> not have an account?create a new account here </p>
+                <a href="/signup.html"><button type="button">Sign Up</button></a>
+            </form> 
+        </div>
+        <br>
+        <div class="center text-big bold">
+           
+        </div>
+        <script type="text/javascript" src="/ui/main.js"></script>
+        <script type="text/javascript">
+            var el = document.querySelector(".info");
+            el.style.display = "none";
+            document.getElementById("img").onclick = function () {
+                if (el.style.display != "none")
+                    el.style.display = "none";
+                else 
+                    el.style.display = "block";
+            };
+        </script>
+    </body>
+</html>
