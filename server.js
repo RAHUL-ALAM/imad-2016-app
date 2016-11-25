@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-app.use(express.static("public"));
+
 
 
 
@@ -48,7 +48,7 @@ app.get('/logout',
 app.get('/',
   require('connect-ensure-login').ensureLoggedIn(),
   function(req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+    res.sendFile(path.join(__dirname, 'view', 'index.html'));
   });
 
 
@@ -77,12 +77,14 @@ app.get('/article-one',function (req,res) {
 
 app.get('/login', function(req, res){
 	if (req.user) return res.redirect('/');
-	res.sendFile(path.join(__dirname, 'ui', 'login.html'));
+	res.sendFile(path.join(__dirname, 'view', 'login.html'));
 });
 
 
 app.post('/login', passport.authenticate('local', { successRedirect: '/',
                                                     failureRedirect: '/login' }));
+
+app.use(express.static("ui"));
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
